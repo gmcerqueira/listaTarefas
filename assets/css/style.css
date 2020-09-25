@@ -7,7 +7,7 @@ body {
   /* align-items: center;
   justify-content: center; */
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
 }
 
 .todo-list {
@@ -16,8 +16,8 @@ body {
   padding: 2rem;
   width: 100%;
   /* min-width: 500px; */
-  height: 60%;
-  min-height: 300px;
+  height: 70%;
+  /* min-height: 300px; */
 
   border-radius: 2rem;
 }
@@ -34,9 +34,9 @@ body {
   display: flex;
   justify-content: center;
 }
-.form-input, .form-button {
+.form-input, .form-button, .task {
   border-radius: .5rem;
-  padding: 0.75rem;
+  padding: .7rem;
   font-size: 1rem;
 }
 .form-input {
@@ -56,8 +56,10 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  margin-left: 0.4rem;
+  margin-left: 0.8rem;
   width: 25%;
+  max-width: 250px;
+  min-width: 125px;
 }
 .form-button:hover {
   color: #F6F1D1;
@@ -65,18 +67,26 @@ body {
 }
 
 .list {
-  padding: 0;
+  padding: 1rem 0;
   list-style: none;
   width: 100%;
 }
 
 .task {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   color: #F6F1D1;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  padding: 1rem 3rem;
+
+}
+
+.button-box {
+  min-width: 200px;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .check-button, .delete-button {
@@ -84,9 +94,13 @@ body {
   border: none;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   outline: none;
-  border-radius: 2px;
+  border-radius: .4rem;
+  padding: .5rem .9rem;
   cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
 }
+
 
 .task.done .check-button {
   background-color: #46494C;
