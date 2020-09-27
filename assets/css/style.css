@@ -4,20 +4,19 @@ body {
 
 .app {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
 }
 
 .todo-list {
   background-color: #1f3786;
-  
   padding: 2rem;
-  width: 100%;
-  /* min-width: 500px; */
+  width: 70%;
+  min-width: 500px;
   height: 70%;
-  /* min-height: 300px; */
+  min-height: 300px;
 
   border-radius: 2rem;
 }
@@ -79,11 +78,14 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.5rem;
+  box-sizing: border-box;
+  
 
 }
 
 .button-box {
   min-width: 200px;
+  max-width: 25%;
   margin-left: 1rem;
   display: flex;
   justify-content: space-between;
@@ -121,7 +123,8 @@ body {
 }
 
 .content {
-  margin: 0;
+  word-wrap: break-word;
+  max-width: 75%;
 }
 
 .task.done .content {
